@@ -12,8 +12,8 @@ ENTRYPOINT ["sudo", "mkdir", "/app/"]
 
 WORKDIR app
 
-COPY --from=builder /home/gradle/src/build/libs/Catalog-0.0.1-SNAPSHOT.jar /app
+COPY --from=builder /home/gradle/src/build/libs/Catalog-0.0.1.jar /app
 
 EXPOSE 8090
 
-ENTRYPOINT ["java", "-jar", "/app/Catalog-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/Catalog-0.0.1.jar"]
