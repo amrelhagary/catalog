@@ -24,6 +24,16 @@ public class Product {
     @Column
     private String image;
 
+    public Product() {}
+
+    public Product(int id, String title, float price, String brand, String image) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.brand = brand;
+        this.image = image;
+    }
+
     public int getId() {
         return id;
     }
